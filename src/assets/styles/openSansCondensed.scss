@@ -1,0 +1,98 @@
+// Define font faces for OpenSans Condensed
+
+$open-sans-condensed-bold-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-Bold.ttf';
+$open-sans-condensed-bold-italic-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-BoldItalic.ttf';
+$open-sans-condensed-extra-bold-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-ExtraBold.ttf';
+$open-sans-condensed-extra-bold-italic-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-ExtraBoldItalic.ttf';
+$open-sans-condensed-italic-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-Italic.ttf';
+$open-sans-condensed-light-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-Light.ttf';
+$open-sans-condensed-light-italic-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-LightItalic.ttf';
+$open-sans-condensed-medium-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-Medium.ttf';
+$open-sans-condensed-medium-italic-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-MediumItalic.ttf';
+$open-sans-condensed-regular-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-Regular.ttf';
+$open-sans-condensed-semi-bold-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-SemiBold.ttf';
+$open-sans-condensed-semi-bold-italic-path: 'assets/fonts/OpenSans_Condensed/OpenSans_Condensed-SemiBoldItalic.ttf';
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-bold-path}') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-bold-italic-path}') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-extra-bold-path}') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-extra-bold-italic-path}') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-italic-path}') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-light-path}') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-light-italic-path}') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-medium-path}') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-medium-italic-path}') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-regular-path}') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-semi-bold-path}') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans Condensed';
+  src: url('#{$open-sans-condensed-semi-bold-italic-path}') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}

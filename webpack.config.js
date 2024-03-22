@@ -15,9 +15,10 @@ module.exports = {
       {
         test: /\.scss$/,
         use: [
-          'style-loader', // Adds CSS to the DOM by injecting a <style> tag
-          'css-loader',   // Interprets @import and url() like import/require() and will resolve them
-          'sass-loader'   // Compiles Sass to CSS
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+          'postcss-loader'
         ]
       },
       {

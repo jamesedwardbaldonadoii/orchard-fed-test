@@ -4,9 +4,10 @@ import * as bootstrap from 'bootstrap'
 // Function to attach src and srcset attributes to image-preview element
 function setImagePreview(src, srcset) {
     const imagePreview = document.getElementById('image-preview');
+	
     if (imagePreview) {
-        imagePreview.setAttribute('src', src);
-        imagePreview.setAttribute('srcset', srcset);
+        imagePreview.setAttribute('src', src ?? 'https://placehold.co/400x300');
+        imagePreview.setAttribute('srcset', srcset ?? 'https://placehold.co/400x300');
     }
 }
 
@@ -24,7 +25,7 @@ function isAnchorOrAncestorAnchor(element) {
 const myModal = document.getElementById('imageModal');
 
 if (myModal) {
-    myModal.addEventListener('shown.bs.modal', (ev) => {
+    myModal.addEventListener('show.bs.modal', (ev) => {
         const relatedTarget = ev.relatedTarget; // triggered the modal
         const nearestImg = relatedTarget?.querySelector('img'); // Nearest img element
         const src = nearestImg ? nearestImg.getAttribute('src') : null; // src attribute
@@ -32,6 +33,11 @@ if (myModal) {
 
         // Attach src and srcset attributes to image-preview
         setImagePreview(src, srcset);
+    });
+
+    myModal.addEventListener('hidden.bs.modal', (ev) => {
+		//Reset image preview
+        setImagePreview('', '');
     });
 }
 
